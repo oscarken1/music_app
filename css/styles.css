@@ -1,4 +1,5 @@
-/* html5doctor.com Reset Stylesheet
+/* 
+html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com 
@@ -22,56 +23,68 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 nav ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* change colours to suit your needs */
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 del {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help; }
+  cursor: help;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* change border colour to suit your needs */
 hr {
@@ -80,39 +93,46 @@ hr {
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 input, select {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-size: 16px;
   font-family: 400;
   color: #36175e;
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .wrapper {
   position: relative;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+}
 
 /*      HEADER          */
 header {
   background-color: #553285;
   color: white;
   padding: 0.5rem 2%;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 /*     NAVIGATION          */
 nav {
@@ -121,34 +141,63 @@ nav {
   bottom: 0;
   width: 100vw;
   border-top: 1px solid #666;
-  display: flex; }
-  nav div {
-    flex-basis: 25%;
-    text-align: center; }
-  nav div a {
-    display: block;
-    font-size: 1.7rem;
-    padding: .5rem 0;
-    color: #aaa; }
-  nav div.active a {
-    background-color: #553285;
-    color: white; }
+  display: flex;
+}
+nav div {
+  flex-basis: 25%;
+  text-align: center;
+}
+nav div a {
+  display: block;
+  font-size: 1.7rem;
+  padding: .5rem 0;
+  color: #aaa;
+}
+nav div.active a {
+  background-color: #553285;
+  color: white;
+}
 
 /*       MAIN ALBUM       */
 main.album {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto; }
-  main.album figure {
-    padding: .7rem 2vw; }
-  main.album figure img {
-    width: 100%; }
-  main.album figure figcaption {
-    text-align: center;
-    padding: .2rem 0; }
+  grid-template-rows: auto;
+}
+main.album figure {
+  padding: .7rem 2vw;
+}
+main.album figure img {
+  width: 100%;
+}
+main.album figure figcaption {
+  text-align: center;
+  padding: .2rem 0;
+}
+
+/*    MAIN ARTIST    */
+main.artist {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+main.artist section {
+  display: grid;
+  grid-template-columns: 80px auto;
+  margin: .75rem 5%;
+}
+main.artist section div img {
+  width: 100%;
+  clip-path: circle(40px at center);
+  -webkit-clip-path: circle(40px at center);
+}
+main.artist section div:nth-child(2) {
+  align-self: center;
+  padding-left: 5%;
+}
 
 @media only screen and (min-width: 560px) {
   main.album {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
-
-/*# sourceMappingURL=styles.css.map */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
