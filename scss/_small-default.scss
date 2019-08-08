@@ -30,8 +30,8 @@ nav{
     position: fixed;
     bottom: 0;
     width: 100vw;
-    border-top: 1px solid $dkgray;
-    display:flex;
+    border-top: 1px solid $dkgrey;
+    display: flex;
 
     div{
         flex-basis: 25%;
@@ -41,10 +41,22 @@ nav{
         display: block;
         font-size: 1.7rem;
         padding: .5rem 0;
-        color: $lytgrey;
+        color: $ltgrey;
     }
     div.active a{
         background-color: $primary;
         color: white;
     }
+}
+
+/*       MAIN ALBUM       */
+main.album{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    figure {padding: .7rem 2vw;}
+    figure img {width: 100%;}
+    figure figcaption {text-align: center; padding: .2rem 0;}
+
 }

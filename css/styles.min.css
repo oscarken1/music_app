@@ -1,0 +1,30 @@
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:0 0}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+body{font-size:16px;font-family:400;color:#36175e;background-color:#fff}
+.wrapper{position:relative;width:100vw;height:100vh}
+header{background-color:#553285;color:#fff;padding:.5rem 2%;font-size:1.5rem}
+nav{background-color:#fff;position:fixed;bottom:0;width:100vw;border-top:1px solid #666;display:flex}
+nav div{flex-basis:25%;text-align:center}
+nav div a{display:block;font-size:1.7rem;padding:.5rem 0;color:#aaa}
+nav div.active a{background-color:#553285;color:#fff}
+main.album{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+main.album figure{padding:.7rem 2vw}
+main.album figure img{width:100%}
+main.album figure figcaption{text-align:center;padding:.2rem 0}
+@media only screen and (min-width:560px){
+main.album{grid-template-columns:1fr 1fr 1fr 1fr}
+}
